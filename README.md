@@ -48,6 +48,16 @@ could already resolve the simple wording. The saved outputs and result are in
 authored, genuinely ambiguous evidence instead of treating a clean demo as
 research confirmation.
 
+## Local-model result: metadata-loss ablation
+
+A second, explicitly different experiment removed type metadata from a flat
+three-record bundle while retaining it in a typed UAS bundle. On 24 frozen
+cases, local Qwen3 4B scored 8/24 with type-erased text and 24/24 with typed
+UAS records; wrong-domain answers fell from 16 to 0. This passed its
+predeclared gate, but it has a deliberately narrow interpretation: preserving a
+needed discriminator helps when the baseline has removed that discriminator.
+It does not overturn the first tie or establish a general reasoning advantage.
+
 ## Run
 
 Python 3.10+; no external packages or network calls:

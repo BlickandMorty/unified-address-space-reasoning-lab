@@ -14,3 +14,4 @@ jobs:
           python-version: '3.11'
       - run: python verify_claims.py
       - run: python verify_blind_artifact.py
+      - run: python verify_metadata_loss_artifact.py
