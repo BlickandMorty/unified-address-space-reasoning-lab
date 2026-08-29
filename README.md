@@ -37,6 +37,14 @@ addressing layer that lets a science measurement, a local security observation,
 or a model-evaluation result be pulled through one explicit representation
 without losing what it is or where it came from.
 
+## Study this in plain language
+
+The project-by-project study guide, including human-brain analogies and the
+important limits, is the [Research Atlas](https://github.com/BlickandMorty/three-stack-research-portfolio/blob/main/RESEARCH_ATLAS.md).
+For this repo, start with `BLIND_MODEL_PROTOCOL.md`, then inspect the three
+result reports in `results/`. Read the first Qwen result before the second: the
+tie is why the type-erasure result must be interpreted narrowly.
+
 ## Local-model result: non-confirmation
 
 The first frozen local-model comparison used the installed local `qwen3:4b`
