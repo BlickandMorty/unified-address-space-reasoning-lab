@@ -37,6 +37,17 @@ addressing layer that lets a science measurement, a local security observation,
 or a model-evaluation result be pulled through one explicit representation
 without losing what it is or where it came from.
 
+## Local-model result: non-confirmation
+
+The first frozen local-model comparison used the installed local `qwen3:4b`
+model. It answered all 24 cases correctly under both the flat and UAS prompt
+conditions, so the preregistered UAS-improvement gate did **not** pass. That is
+worth keeping: this corpus did not expose a behavioral advantage once the model
+could already resolve the simple wording. The saved outputs and result are in
+`results/QWEN3_4B_BLIND_UAS_REPORT.md`; the next design must use independently
+authored, genuinely ambiguous evidence instead of treating a clean demo as
+research confirmation.
+
 ## Run
 
 Python 3.10+; no external packages or network calls:
