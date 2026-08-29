@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Independent corpus contract for UAS v1",
+  "type": "object",
+  "required": ["study", "roles", "retrieval_implementation", "source_records", "cases"],
+  "properties": {
+    "study": {"type": "string", "const": "uas-independent-corpus-v1"},
+    "roles": {
+      "type": "object",
+      "required": ["retrieval_implementer", "case_author", "blind_grader"],
+      "properties": {
+        "retrieval_implementer": {"type": "string", "minLength": 1},
+        "case_author": {"type": "string", "minLength": 1},
+        "blind_grader": {"type": "string", "minLength": 1}
+      }
+    },
+    "retrieval_implementation": {
+      "type": "object",
+      "required": ["file", "sha256"],
+      "properties": {
+        "file": {"type": "string", "const": "uas.py"},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "source_records": {"type": "array", "minItems": 36},
+    "cases": {"type": "array", "minItems": 36}
+  }
+}

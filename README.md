@@ -80,6 +80,24 @@ The public corpus is entirely synthetic. The study is designed to be easy to
 falsify: if typed retrieval does not improve exact retrieval or reduce type
 contamination on the frozen corpus, the report must say so.
 
+## Independent-corpus gate (next study, not a result)
+
+The next UAS study is now preregistered in
+[`EXTERNAL_CORPUS_PREREGISTRATION.md`](EXTERNAL_CORPUS_PREREGISTRATION.md).
+It cannot be filled with another hand-authored success fixture: an accepting
+corpus must contain public third-party source receipts, distinct implementer /
+case-author / blind-grader roles, a frozen `uas.py` hash, and at least 12
+held-out cases from each stack. Validate a candidate corpus before any model
+run with:
+
+```powershell
+python .\verify_external_corpus_contract.py path\to\candidate_corpus.json
+```
+
+The scaffold is deliberately not a positive result and has no portfolio chart.
+Its job is to make the next result credible enough to matter, including if it
+fails.
+
 ## Boundaries
 
 - This is not a live 70B route, weight paging system, or proof of EML
