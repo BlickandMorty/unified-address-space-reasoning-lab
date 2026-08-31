@@ -37,6 +37,15 @@ addressing layer that lets a science measurement, a local security observation,
 or a model-evaluation result be pulled through one explicit representation
 without losing what it is or where it came from.
 
+## SYNTH implementation bridge
+
+The local [SYNTH AI data lab](https://github.com/BlickandMorty/synth-ai-data-lab)
+uses the four-part UAS address shape on its prompt, completion, annotation, and
+external-context packets. The exact field mapping, reproducibility steps, and
+important non-claims are in [SYNTH_PACKET_BRIDGE.md](SYNTH_PACKET_BRIDGE.md).
+This is an implementation connection for provenance and reviewability, not a
+new positive result from the retrieval studies in this repository.
+
 ## Study this in plain language
 
 The project-by-project study guide, including human-brain analogies and the
