@@ -1,5 +1,11 @@
 # Unified Address Space Reasoning Lab
 
+> **Project status:** AI-assisted controlled retrieval experiment.
+>
+> **Ownership and assistance:** Jordan framed the question, chose the public boundary, reviewed the evidence and results, and used AI assistance for parts of implementation and iteration. This repository is evidence of hands-on project work and research direction; it is not a claim of unaided expertise in every language, library, or systems concept used here.
+>
+> **Public boundary:** The reported findings concern fixed synthetic retrieval controls. They do not establish general AI reasoning, factual truth, live routing, or a production system.
+
 This is the research version of an older Unified Address Space (UAS) idea.
 The question is not whether I can rewrite a runtime in Rust. The question is:
 
